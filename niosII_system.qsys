@@ -194,19 +194,19 @@
          type = "String";
       }
    }
-   element sdram_0.s1
-   {
-      datum baseAddress
-      {
-         value = "8388608";
-         type = "String";
-      }
-   }
    element onchip_memory2_0.s1
    {
       datum baseAddress
       {
          value = "17842176";
+         type = "String";
+      }
+   }
+   element sdram_0.s1
+   {
+      datum baseAddress
+      {
+         value = "8388608";
          type = "String";
       }
    }
@@ -285,7 +285,7 @@
  <parameter name="projectName">niosII_microc_lab1.qpf</parameter>
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1427154829508" />
+ <parameter name="timeStamp" value="1427158179004" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
