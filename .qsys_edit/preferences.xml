@@ -3,7 +3,7 @@
  <debug showDebugMenu="0" />
  <systemtable>
   <columns>
-   <connections preferredWidth="191" />
+   <connections preferredWidth="319" />
    <irq preferredWidth="34" />
    <inputclock preferredWidth="187" />
    <name preferredWidth="321" />
@@ -12,12 +12,13 @@
  </systemtable>
  <clocktable>
   <columns>
-   <clockname preferredWidth="383" />
-   <clocksource preferredWidth="382" />
-   <frequency preferredWidth="379" />
+   <clockname preferredWidth="357" />
+   <clocksource preferredWidth="356" />
+   <frequency preferredWidth="353" />
   </columns>
  </clocktable>
- <library expandedCategories="Library,Project" />
+ <library
+   expandedCategories="Library/University Program/Audio &amp; Video,Library,Library/Interface Protocols/SDI,Library/Terasic Technologies Inc,Library/Interface Protocols,Library/University Program,Project" />
  <window width="1440" height="860" x="0" y="0" />
  <hdlexample language="VERILOG" />
 </preferences>

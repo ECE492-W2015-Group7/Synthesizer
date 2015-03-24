@@ -29,7 +29,8 @@ library ieee;
 		-- Input ports and 50 MHz Clock
 		KEY		: in  std_logic_vector (0 downto 0);
 		CLOCK_50	: in  std_logic;
-		
+		CLOCK_27 : in  std_logic;
+	
 		-- Green leds on board
 		LCD_BLON	: out std_logic;
 		LCD_ON	: out std_logic;
@@ -61,7 +62,20 @@ library ieee;
 		SRAM_OE_N	:	out	std_logic;
 		SRAM_UB_N	:	out 	std_logic;
 		SRAM_LB_N	:	out	std_logic;
-		SRAM_CE_N	:	out	std_logic
+		SRAM_CE_N	:	out	std_logic;
+		
+		--I2C interface
+		I2C_SCLK	:  out		std_logic;
+		I2C_SDAT	:  inout	std_logic;
+						 
+		--AUDIO 
+		AUD_ADCLRCK :  inout 	std_logic; 
+		AUD_ADCDAT 	:  in 		std_logic; 
+		AUD_DACLRCK :  inout 	std_logic; 
+		AUD_DACDAT 	:  out 		std_logic; 
+		AUD_XCK 		:  out 		std_logic; 
+		AUD_BCLK 	:  inout 	std_logic	
+		
 	);
 	
 end niosII_microc_lab1;
@@ -74,6 +88,7 @@ architecture structure of niosII_microc_lab1 is
 	 component niosII_system is
         port (
             clk_clk                                 : in    std_logic                     := 'X';             -- clk
+				clk27m_clk 										 : in    std_logic                     := 'X';             -- clk
             reset_reset_n                           : in    std_logic                     := 'X';             -- reset_n
             sdram_0_wire_addr                       : out   DE2_SDRAM_ADDR_BUS;                    -- addr
             sdram_0_wire_ba                         : out   std_logic_vector(1 downto 0);                     -- ba
@@ -97,7 +112,18 @@ architecture structure of niosII_microc_lab1 is
             character_lcd_0_external_interface_BLON : out   std_logic;                                        -- BLON
             character_lcd_0_external_interface_EN   : out   std_logic;                                        -- EN
             character_lcd_0_external_interface_RS   : out   std_logic;                                        -- RS
-            character_lcd_0_external_interface_RW   : out   std_logic
+            character_lcd_0_external_interface_RW   : out   std_logic;
+				audio_and_video_config_0_external_interface_SCLK : out std_logic;
+				audio_and_video_config_0_external_interface_SDAT : inout std_logic;
+				
+				audio_0_external_interface_ADCDAT 	: in std_logic;
+				audio_0_external_interface_ADCLRCK 	: inout std_logic;
+				audio_0_external_interface_BCLK 		: inout std_logic;	
+				audio_0_external_interface_DACDAT	: out	std_logic;
+				audio_0_external_interface_DACLRCK	: inout std_logic;
+
+				up_clocks_0_audio_clk_clk					: out std_logic
+				
         );
     end component niosII_system;
 
@@ -119,7 +145,8 @@ begin
 	
 	  u0 : component niosII_system
         port map (
-            clk_clk                                 => CLOCK_50,                                
+            clk_clk                                 => CLOCK_50,    
+				clk27m_clk										 => CLOCK_27,
             reset_reset_n                           => KEY(0),                          
             sdram_0_wire_addr                       => DRAM_ADDR,                      
             sdram_0_wire_ba                         => BA,                        
@@ -143,8 +170,18 @@ begin
             character_lcd_0_external_interface_BLON => LCD_BLON, 
             character_lcd_0_external_interface_EN   => LCD_EN,   
             character_lcd_0_external_interface_RS   => LCD_RS,   
-            character_lcd_0_external_interface_RW   => LCD_RW
-			);
+            character_lcd_0_external_interface_RW   => LCD_RW,
+
+				audio_and_video_config_0_external_interface_SCLK =>I2C_SCLK,
+				audio_and_video_config_0_external_interface_SDAT => I2C_SDAT,
+			
+				audio_0_external_interface_ADCDAT  => AUD_ADCDAT,
+				audio_0_external_interface_ADCLRCK => AUD_ADCLRCK,
+				audio_0_external_interface_BCLK 	  => AUD_BCLK,
+				audio_0_external_interface_DACDAT  => AUD_DACDAT,
+				audio_0_external_interface_DACLRCK => AUD_DACLRCK,
+				up_clocks_0_audio_clk_clk		=>AUD_XCK	
+	);
 
 end structure;
 

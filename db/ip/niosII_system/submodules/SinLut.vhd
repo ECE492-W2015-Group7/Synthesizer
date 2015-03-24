@@ -33,7 +33,7 @@ type rom_type is array (0 to 4095) of std_logic_vector (11 downto 0);
 constant SIN_ROM : rom_type :=
 
 (
-X"123", X"003", X"006", X"009", X"00d", X"010", X"013", X"016", 
+X"000", X"003", X"006", X"009", X"00d", X"010", X"013", X"016", 
 X"019", X"01c", X"01f", X"023", X"026", X"029", X"02c", X"02f", 
 X"032", X"035", X"039", X"03c", X"03f", X"042", X"045", X"048", 
 X"04b", X"04e", X"052", X"055", X"058", X"05b", X"05e", X"061", 

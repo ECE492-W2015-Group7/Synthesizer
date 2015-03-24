@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>ucosii</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>23-Mar-2015 6:25:40 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1427156740242</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>23-Mar-2015 7:08:07 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1427159287457</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\qsjiang\Documents\Github\SynthesizerV0.1\software\SynthesizerUnitTest_bsp</BspGeneratedLocation>
-        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
+        <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\qsjiang\Documents\Github\SynthesizerV0.1\niosII_system.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>nios2_qsys_0</Cpu>
@@ -1727,38 +1727,50 @@
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>altpll_0</slaveDescriptor>
+                <slaveDescriptor>audio_0</slaveDescriptor>
                 <addressRange>0x01109060 - 0x0110906F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>audio_and_video_config_0</slaveDescriptor>
+                <addressRange>0x01109070 - 0x0110907F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>altpll_0</slaveDescriptor>
+                <addressRange>0x01109080 - 0x0110908F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>fifo_0_out</slaveDescriptor>
-                <addressRange>0x01109070 - 0x01109077</addressRange>
+                <addressRange>0x01109090 - 0x01109097</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-                <addressRange>0x01109078 - 0x0110907F</addressRange>
+                <addressRange>0x01109098 - 0x0110909F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-                <addressRange>0x01109080 - 0x01109087</addressRange>
+                <addressRange>0x011090A0 - 0x011090A7</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>Synthesizer_0</slaveDescriptor>
-                <addressRange>0x01109088 - 0x0110908B</addressRange>
+                <addressRange>0x011090A8 - 0x011090AB</addressRange>
                 <addressSpan>4</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>character_lcd_0</slaveDescriptor>
-                <addressRange>0x0110908C - 0x0110908D</addressRange>
+                <addressRange>0x011090AC - 0x011090AD</addressRange>
                 <addressSpan>2</addressSpan>
                 <attributes/>
         </MemoryMap>
