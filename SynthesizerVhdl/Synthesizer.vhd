@@ -5,7 +5,7 @@ library IEEE;
     use IEEE.numeric_bit.all;
     use IEEE.numeric_std.all;
     use IEEE.std_logic_signed.all;
-    use IEEE.std_logic_unsigned.all;
+    --use IEEE.std_logic_unsigned.all;
 	
 use work.SynthesizerPackage.all;
 
@@ -25,8 +25,9 @@ end Synthesizer;
 
 architecture synthesizer of Synthesizer is
 
-	signal target_lut_addresses 	: LUT_ADDRESSES;
-	signal audioData		: WAVE_ARRAY;
+	signal target_lut_addresses : LUT_ADDRESSES := (others=> (others=>'0'));
+	signal audioData			: WAVE_ARRAY := (others=> (others=>'0'));
+	
 
 	component AddressIncrementor is
 	port (
@@ -38,7 +39,7 @@ architecture synthesizer of Synthesizer is
 	  phase_inc   	: in  std_logic_vector(15 downto 0);
 
 	  -- Output waveforms
-	  lut_address	: out std_logic_vector(11 downto 0)
+	  lut_address	: out std_logic_vector(15 downto 0)
 	  );
 	end component;
 	
@@ -56,15 +57,18 @@ architecture synthesizer of Synthesizer is
 
 	begin
 	
-	anAddressIncrementor: AddressIncrementor
-		port map(
-			clk => clk,
-			reset_n => reset_n,
-			phase_inc => phase_increments(0)(15 downto 0),
-			lut_address => target_lut_addresses(0)
-		);
+	l8: for i in 0 to N-1 generate
+		ai: AddressIncrementor
+			port map(
+				clk => clk,
+				reset_n => reset_n,
+				phase_inc => phase_increments(i)(15 downto 0),
+				lut_address => target_lut_addresses(i)
+			);
+	end generate;
 		
-	aSinLut: SinLut
+		
+	sl: SinLut
 		port map(
 			clk => clk,
 			address => target_lut_addresses,
@@ -74,7 +78,7 @@ architecture synthesizer of Synthesizer is
 	send_output: process(clk, reset_n)
 	begin
 		if rising_edge(clk) then
-			audio_output <= audioData(0);
+			audio_output <= audioData(0) + audioData(1);
 		end if;
 	end process send_output;
 

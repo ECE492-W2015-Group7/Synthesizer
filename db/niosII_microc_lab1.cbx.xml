@@ -1,14 +1,15 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="niosII_microc_lab1">
-		<CBX_INST_ENTRY INSTANCE_NAME="|niosII_microc_lab1|niosII_system:u0|SynthesizerTopLevel:synthesizer_0|Synthesizer:laserHarpSynthesizer|SinLut:aSinLut|altsyncram:Mux10_rtl_0" CBX_FILE_NAME="altsyncram_tm11.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|niosII_microc_lab1|niosII_system:u0|niosII_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO" CBX_FILE_NAME="scfifo_7041.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|niosII_microc_lab1|niosII_system:u0|niosII_system_fifo_0:fifo_0|niosII_system_fifo_0_dcfifo_with_controls:the_dcfifo_with_controls|niosII_system_fifo_0_dual_clock_fifo:the_dcfifo|dcfifo:dual_clock_fifo" CBX_FILE_NAME="dcfifo_a1n1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|niosII_microc_lab1|niosII_system:u0|niosII_system_nios2_qsys_0:nios2_qsys_0|niosII_system_nios2_qsys_0_mult_cell:the_niosII_system_nios2_qsys_0_mult_cell|altmult_add:the_altmult_add_part_1" CBX_FILE_NAME="mult_add_l0u2.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|niosII_microc_lab1|niosII_system:u0|niosII_system_nios2_qsys_0:nios2_qsys_0|niosII_system_nios2_qsys_0_ic_tag_module:niosII_system_nios2_qsys_0_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_dbi1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|niosII_microc_lab1|niosII_system:u0|niosII_system_nios2_qsys_0:nios2_qsys_0|niosII_system_nios2_qsys_0_mult_cell:the_niosII_system_nios2_qsys_0_mult_cell|altmult_add:the_altmult_add_part_2" CBX_FILE_NAME="mult_add_n0u2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|niosII_microc_lab1|niosII_system:u0|SynthesizerTopLevel:synthesizer_0|Synthesizer:laserHarpSynthesizer|SinLut:sl|altsyncram:Mux22_rtl_0" CBX_FILE_NAME="altsyncram_tm11.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|niosII_microc_lab1|niosII_system:u0|niosII_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO" CBX_FILE_NAME="scfifo_7041.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|niosII_microc_lab1|niosII_system:u0|niosII_system_onchip_memory2_0:onchip_memory2_0|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_njd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|niosII_microc_lab1|niosII_system:u0|SynthesizerTopLevel:synthesizer_0|Synthesizer:laserHarpSynthesizer|SinLut:sl|altsyncram:Mux10_rtl_0" CBX_FILE_NAME="altsyncram_um11.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|niosII_microc_lab1|niosII_system:u0|niosII_system_audio_0:audio_0|altera_up_audio_in_deserializer:Audio_In_Deserializer|altera_up_sync_fifo:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" CBX_FILE_NAME="scfifo_7041.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|niosII_microc_lab1|niosII_system:u0|niosII_system_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO" CBX_FILE_NAME="scfifo_7041.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|niosII_microc_lab1|niosII_system:u0|niosII_system_jtag_uart_0:jtag_uart_0|niosII_system_jtag_uart_0_scfifo_w:the_niosII_system_jtag_uart_0_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>

@@ -17,8 +17,7 @@
    <frequency preferredWidth="353" />
   </columns>
  </clocktable>
- <library
-   expandedCategories="Library/University Program/Audio &amp; Video,Library,Library/Interface Protocols/SDI,Library/Terasic Technologies Inc,Library/Interface Protocols,Library/University Program,Project" />
+ <library expandedCategories="Library,Project" />
  <window width="1440" height="860" x="0" y="0" />
  <hdlexample language="VERILOG" />
 </preferences>

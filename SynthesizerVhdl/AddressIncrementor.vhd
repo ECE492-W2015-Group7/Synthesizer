@@ -21,27 +21,21 @@ entity AddressIncrementor is
 	  phase_inc   	: in  std_logic_vector(15 downto 0);
 
 	  -- Output waveforms
-	  lut_address	: out std_logic_vector(11 downto 0)
+	  lut_address	: out std_logic_vector(15 downto 0)
 	  );
 end entity;
 
 
 architecture rtl of AddressIncrementor is
 
-
-
-	signal  phase_acc     : std_logic_vector(15 downto 0) := x"0000";
-	signal  lut_addr_reg  : std_logic_vector(11 downto 0);
-
+	signal phase_acc : std_logic_vector(15 downto 0);
 
 	begin
 
 
 	--------------------------------------------------------------------------
 	-- Phase accumulator increments by 'phase_inc' every clock cycle        --
-	-- Output frequency determined by formula: Phase_inc = (Fout/Fclk)*2^32 --
-	-- E.g. Fout = 36MHz, Fclk = 100MHz,  Phase_inc = 36*2^32/100           --
-	-- Frequency resolution is 100MHz/2^32 = 0.00233Hz                      --
+	-- Output frequency determined by formula: Phase_inc = (Fout/Fclk)*2^16 --
 	--------------------------------------------------------------------------
 		
 
@@ -57,14 +51,7 @@ architecture rtl of AddressIncrementor is
 	  end if;
 	end process phase_acc_reg;
 
-
-
-	---------------------------------------------------------------------
-	-- use top 12-bits of phase accumulator to address the SIN LUT --
-	---------------------------------------------------------------------
-
-	lut_address <= phase_acc(15 downto 4);
-
+	lut_address <= phase_acc;
 
 	---------------------------------
 	-- Hide the latency of the LUT --

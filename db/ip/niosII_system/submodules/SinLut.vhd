@@ -27,11 +27,13 @@ end entity;
 
 architecture rtl of SinLut is
 
+type SHORT_WAVE_ARRAY is array(0 to N-1) of std_logic_vector (11 downto 0);
+signal audioDataRaw : SHORT_WAVE_ARRAY;
 
 type rom_type is array (0 to 4095) of std_logic_vector (11 downto 0);
 
-constant SIN_ROM : rom_type :=
 
+constant SIN_ROM : rom_type :=
 (
 X"000", X"003", X"006", X"009", X"00d", X"010", X"013", X"016", 
 X"019", X"01c", X"01f", X"023", X"026", X"029", X"02c", X"02f", 
@@ -554,12 +556,21 @@ begin
 rom_select: process (clk)
  variable i : integer := 0;
 begin
-  if clk'event and clk = '1' then
-	for i in 0 to 0 loop
-		audioData(i) <= SIN_ROM(conv_integer(address(i))) & "0000";	
+  if clk'event and clk = '0' then
+	for i in 0 to N-1 loop
+		audioDataRaw(i) <= SIN_ROM(conv_integer(address(i)(15 downto 4)));
+			if audioDataRaw(i)(11) = '0' then
+				audioData(i) <= "0" & audioDataRaw(i) & "000";
+			else
+				audioData(i) <= "1" & audioDataRaw(i) & "000";	
+			end if;		
 	end loop;
   end if;
 end process rom_select;
 
+
+shift: for i in 0 to N-1 generate
+
+end generate;
 
 end rtl;

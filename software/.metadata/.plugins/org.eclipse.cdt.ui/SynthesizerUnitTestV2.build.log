@@ -1,0 +1,21 @@
+
+**** Build of configuration Nios II for project SynthesizerUnitTestV2 ****
+
+make all 
+Info: Building ../SynthesizerUnitTestV2_bsp/
+make --no-print-directory -C ../SynthesizerUnitTestV2_bsp/
+[BSP build complete]
+Info: Compiling hello_ucosii.c to obj/default/hello_ucosii.o
+nios2-elf-gcc -xc -MP -MMD -c -I../SynthesizerUnitTestV2_bsp//UCOSII/inc -I../SynthesizerUnitTestV2_bsp//HAL/inc -I../SynthesizerUnitTestV2_bsp/ -I../SynthesizerUnitTestV2_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -D__ucosii__    -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_ucosii.o hello_ucosii.c
+hello_ucosii.c: In function 'task1':
+hello_ucosii.c:77: warning: right shift count >= width of type
+hello_ucosii.c:77: warning: suggest parentheses around + or - inside shift
+hello_ucosii.c:69: warning: unused variable 'data'
+hello_ucosii.c: In function 'main':
+hello_ucosii.c:108: error: expected expression before ',' token
+hello_ucosii.c:117: error: 'TASK2_PRIORITY' undeclared (first use in this function)
+hello_ucosii.c:117: error: (Each undeclared identifier is reported only once
+hello_ucosii.c:117: error: for each function it appears in.)
+make: *** [obj/default/hello_ucosii.o] Error 1
+
+**** Build Finished ****

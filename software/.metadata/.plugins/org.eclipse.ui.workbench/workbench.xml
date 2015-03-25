@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="33" version="2.0">
+<workbench progressCount="34" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="17" y="-9">
 <fastViewData fastViewLocation="1024"/>
@@ -29,18 +29,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_ucosii.c" partName="hello_ucosii.c" path="C:/Users/qsjiang/Documents/Github/SynthesizerV0.1/software/SynthesizerUnitTest/hello_ucosii.c" title="hello_ucosii.c" tooltip="SynthesizerUnitTest/hello_ucosii.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SynthesizerUnitTest/hello_ucosii.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="627" selectionTopPixel="210"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" partName="system.h" path="C:/Users/qsjiang/Documents/Github/SynthesizerV0.1/software/SynthesizerUnitTest_bsp/system.h" title="system.h" tooltip="SynthesizerUnitTest_bsp/system.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SynthesizerUnitTest_bsp/system.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="4626" selectionTopPixel="2055"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_ucosii.c" partName="hello_ucosii.c" path="C:/Users/crinklaw/Synthesizer/software/SynthesizerUnitTestV3/hello_ucosii.c" title="hello_ucosii.c" tooltip="SynthesizerUnitTestV3/hello_ucosii.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SynthesizerUnitTestV3/hello_ucosii.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3001" selectionTopPixel="1090"/>
 </editor>
 </editors>
 <views>
@@ -52,7 +47,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (1 item)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -242,7 +237,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.64361703" ratioLeft="484" ratioRight="268" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.83643615" ratioLeft="629" ratioRight="123" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -273,75 +268,174 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FIFOTest/hello_ucosii.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FIFO/hello_ucosii.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthesizerUnitTest/hello_ucosii.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthUnitTest/hello_ucosii.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthesizerUnitTest/hello_ucosii.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthesizerUnitTest_bsp/system.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthesizerUnitTest_bsp/system.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthesizerUnitTestV2/hello_ucosii.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthesizerUnitTestV2_bsp/system.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthesizerUnitTestV2_bsp/system.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthesizerUnitTestV3/hello_ucosii.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthesizerUnitTestV2/hello_ucosii.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthUnitTest/hello_ucosii.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthesizerUnitTest/hello_ucosii.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthesizerUnitTest_bsp/system.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthesizerUnitTest_bsp/HAL/inc/includes.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthesizerUnitTest_bsp/system.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthesizerUnitTest/hello_ucosii.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SynthesizerUnitTestV3/hello_ucosii.c"/>
 </editors>
 <item historyLabel="hello_ucosii.c" index="0">
-<position info="not_deleted" x="0" y="1612"/>
-</item>
-<item historyLabel="hello_ucosii.c" index="1">
 <position/>
 </item>
-<item historyLabel="hello_ucosii.c" index="1">
-<position/>
+<item historyLabel="hello_ucosii.c" index="0">
+<position info="not_deleted" x="0" y="1659"/>
 </item>
 <item historyLabel="hello_ucosii.c" index="1">
-<position/>
-</item>
-<item historyLabel="hello_ucosii.c" index="2">
 <position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="hello_ucosii.c" index="1">
-<position/>
 </item>
 <item historyLabel="hello_ucosii.c" index="1">
 <position info="not_deleted" x="0" y="1659"/>
 </item>
 <item historyLabel="hello_ucosii.c" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="hello_ucosii.c" index="2">
-<position info="not_deleted" x="0" y="1659"/>
-</item>
-<item historyLabel="hello_ucosii.c" index="3">
 <position info="not_deleted" x="1659" y="0"/>
 </item>
-<item historyLabel="hello_ucosii.c" index="3">
+<item historyLabel="hello_ucosii.c" index="2">
 <position info="not_deleted" x="0" y="1428"/>
 </item>
-<item historyLabel="hello_ucosii.c" index="4">
+<item historyLabel="hello_ucosii.c" index="3">
 <position/>
+</item>
+<item historyLabel="system.h" index="4">
+<position info="not_deleted" x="4626" y="18"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="3">
+<position info="not_deleted" x="917" y="0"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="3">
+<position/>
+</item>
+<item historyLabel="hello_ucosii.c" index="3">
+<position/>
+</item>
+<item historyLabel="hello_ucosii.c" index="3">
+<position/>
+</item>
+<item historyLabel="hello_ucosii.c" index="3">
+<position info="not_deleted" x="2413" y="0"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="3">
+<position/>
+</item>
+<item historyLabel="hello_ucosii.c" index="3">
+<position/>
+</item>
+<item historyLabel="hello_ucosii.c" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="system.h" index="5">
 <position info="not_deleted" x="4626" y="18"/>
 </item>
-<item historyLabel="hello_ucosii.c" index="4">
-<position info="not_deleted" x="917" y="0"/>
+<item historyLabel="hello_ucosii.c" index="6">
+<position info="not_deleted" x="3584" y="0"/>
 </item>
-<item historyLabel="hello_ucosii.c" index="4">
-<position/>
+<item historyLabel="system.h" index="7">
+<position info="not_deleted" x="4689" y="18"/>
 </item>
-<item historyLabel="hello_ucosii.c" index="4">
-<position/>
+<item historyLabel="hello_ucosii.c" index="6">
+<position info="not_deleted" x="3584" y="0"/>
 </item>
-<item historyLabel="hello_ucosii.c" index="4">
-<position/>
+<item historyLabel="system.h" index="8">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="hello_ucosii.c" index="4">
-<position info="not_deleted" x="2413" y="0"/>
+<item historyLabel="hello_ucosii.c" index="9">
+<position info="not_deleted" x="3584" y="0"/>
 </item>
-<item historyLabel="hello_ucosii.c" index="4">
-<position/>
+<item historyLabel="hello_ucosii.c" index="10">
+<position info="not_deleted" x="0" y="3584"/>
 </item>
-<item historyLabel="hello_ucosii.c" index="4">
-<position/>
+<item historyLabel="hello_ucosii.c" index="9">
+<position info="not_deleted" x="0" y="3584"/>
 </item>
-<item active="true" historyLabel="hello_ucosii.c" index="4">
+<item historyLabel="hello_ucosii.c" index="11">
+<position info="not_deleted" x="3234" y="0"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="system.h" index="13">
+<position info="not_deleted" x="4737" y="42"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="system.h" index="13">
+<position info="not_deleted" x="4737" y="42"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="12">
+<position info="not_deleted" x="2928" y="0"/>
+</item>
+<item historyLabel="system.h" index="13">
+<position info="not_deleted" x="4737" y="42"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="12">
+<position info="not_deleted" x="35" y="0"/>
+</item>
+<item historyLabel="includes.h" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="12">
+<position info="not_deleted" x="379" y="0"/>
+</item>
+<item historyLabel="system.h" index="13">
+<position info="not_deleted" x="4737" y="42"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="12">
+<position info="not_deleted" x="379" y="0"/>
+</item>
+<item historyLabel="system.h" index="13">
+<position info="not_deleted" x="4563" y="0"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="12">
 <position info="not_deleted" x="2829" y="0"/>
+</item>
+<item historyLabel="system.h" index="13">
+<position info="not_deleted" x="4563" y="0"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="12">
+<position info="not_deleted" x="2829" y="0"/>
+</item>
+<item historyLabel="system.h" index="13">
+<position info="not_deleted" x="4780" y="9"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="12">
+<position info="not_deleted" x="2734" y="0"/>
+</item>
+<item historyLabel="system.h" index="15">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="16">
+<position info="not_deleted" x="2415" y="0"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="17">
+<position info="not_deleted" x="3804" y="0"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="16">
+<position info="not_deleted" x="0" y="3801"/>
+</item>
+<item historyLabel="hello_ucosii.c" index="17">
+<position info="not_deleted" x="3804" y="0"/>
+</item>
+<item active="true" historyLabel="hello_ucosii.c" index="17">
+<position info="not_deleted" x="3065" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -361,14 +455,23 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_ucosii.c" tooltip="SynthesizerUnitTestV3/hello_ucosii.c">
+<persistable path="/SynthesizerUnitTestV3/hello_ucosii.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="includes.h" tooltip="SynthesizerUnitTest_bsp/HAL/inc/includes.h">
+<persistable path="/SynthesizerUnitTest_bsp/HAL/inc/includes.h"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" tooltip="SynthesizerUnitTest_bsp/system.h">
 <persistable path="/SynthesizerUnitTest_bsp/system.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_ucosii.c" tooltip="SynthesizerUnitTest/hello_ucosii.c">
-<persistable path="/SynthesizerUnitTest/hello_ucosii.c"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_ucosii.c" tooltip="SynthUnitTest/hello_ucosii.c">
 <persistable path="/SynthUnitTest/hello_ucosii.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_ucosii.c" tooltip="SynthesizerUnitTestV2/hello_ucosii.c">
+<persistable path="/SynthesizerUnitTestV2/hello_ucosii.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" tooltip="SynthesizerUnitTestV2_bsp/system.h">
+<persistable path="/SynthesizerUnitTestV2_bsp/system.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_ucosii.c" tooltip="FIFO/hello_ucosii.c">
 <persistable path="/FIFO/hello_ucosii.c"/>
