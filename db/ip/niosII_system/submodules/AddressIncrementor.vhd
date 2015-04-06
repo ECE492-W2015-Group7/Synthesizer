@@ -28,7 +28,7 @@ end entity;
 
 architecture rtl of AddressIncrementor is
 
-	signal phase_acc : std_logic_vector(15 downto 0);
+	signal phase_acc : std_logic_vector(15 downto 0) := x"0000";
 
 	begin
 

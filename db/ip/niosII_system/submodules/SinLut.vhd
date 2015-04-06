@@ -28,7 +28,7 @@ end entity;
 architecture rtl of SinLut is
 
 type SHORT_WAVE_ARRAY is array(0 to N-1) of std_logic_vector (11 downto 0);
-signal audioDataRaw : SHORT_WAVE_ARRAY;
+signal audioDataRaw : SHORT_WAVE_ARRAY := (others=> (others=>'0'));
 
 type rom_type is array (0 to 4095) of std_logic_vector (11 downto 0);
 

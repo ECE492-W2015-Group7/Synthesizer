@@ -1,4 +1,4 @@
-library IEEE;
+library ieee;
     use IEEE.std_logic_1164.all;
     use IEEE.std_logic_textio.all;
     use IEEE.std_logic_arith.all;
@@ -6,8 +6,7 @@ library IEEE;
     use IEEE.numeric_std.all;
     use IEEE.std_logic_signed.all;
     --use IEEE.std_logic_unsigned.all;
-	
-use work.SynthesizerPackage.all;
+	use work.SynthesizerPackage.all;
 
 entity Synthesizer is
 	port (
@@ -78,7 +77,9 @@ architecture synthesizer of Synthesizer is
 	send_output: process(clk, reset_n)
 	begin
 		if rising_edge(clk) then
-			audio_output <= audioData(0) + audioData(1);
+			audio_output <= audioData(1) + audioData(0);
+			--audio_output <= std_logic_vector(signed(audioData(1)) + signed(audioData(0)));
+			--audio_output <= unsigned(audioData(1)) + unsigned(audioData(0));
 		end if;
 	end process send_output;
 

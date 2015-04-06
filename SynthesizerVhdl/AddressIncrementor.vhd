@@ -28,7 +28,7 @@ end entity;
 
 architecture rtl of AddressIncrementor is
 
-	signal phase_acc : std_logic_vector(15 downto 0);
+	signal phase_acc : std_logic_vector(15 downto 0) := x"0000";
 
 	begin
 
@@ -45,9 +45,7 @@ architecture rtl of AddressIncrementor is
 			phase_acc <= (others => '0');
 
 	  elsif clk'event and clk = '1' then
-		--if en = '1' then
-			phase_acc <= unsigned(phase_acc) + unsigned(phase_inc);  
-		--end if;
+		phase_acc <= unsigned(phase_acc) + unsigned(phase_inc);
 	  end if;
 	end process phase_acc_reg;
 

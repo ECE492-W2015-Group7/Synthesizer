@@ -9,7 +9,7 @@ library IEEE;
     use IEEE.numeric_bit.all;
     use IEEE.numeric_std.all;
     use IEEE.std_logic_signed.all;
-    use IEEE.std_logic_unsigned.all;
+    --use IEEE.std_logic_unsigned.all;
 	
 use work.SynthesizerPackage.all;	
 	
@@ -115,5 +115,7 @@ begin
 		audio_output => aso_data_audio_out(31 downto 16),
 		audio_output_valid => aso_valid_audio_out
 	);
+	
+	aso_data_audio_out(15 downto 0) <= x"0000";
 	
 end additionalSynthesizer;

@@ -1,6 +1,6 @@
 Flow report for niosII_microc_lab1
-Tue Mar 24 23:20:39 2015
-Quartus II 32-bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
+Sun Apr 05 17:53:00 2015
+Quartus II 64-Bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
 
 
 ---------------------
@@ -38,15 +38,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------------+
 ; Flow Summary                                                                           ;
 +------------------------------------+---------------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 24 23:20:35 2015             ;
-; Quartus II 32-bit Version          ; 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version ;
+; Flow Status                        ; Successful - Sun Apr 05 17:52:57 2015             ;
+; Quartus II 64-Bit Version          ; 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version ;
 ; Revision Name                      ; niosII_microc_lab1                                ;
 ; Top-level Entity Name              ; niosII_microc_lab1                                ;
 ; Family                             ; Cyclone II                                        ;
 ; Device                             ; EP2C35F672C6                                      ;
 ; Timing Models                      ; Final                                             ;
-; Total logic elements               ; 6,147 / 33,216 ( 19 % )                           ;
-;     Total combinational functions  ; 5,422 / 33,216 ( 16 % )                           ;
+; Total logic elements               ; 6,141 / 33,216 ( 18 % )                           ;
+;     Total combinational functions  ; 5,418 / 33,216 ( 16 % )                           ;
 ;     Dedicated logic registers      ; 3,879 / 33,216 ( 12 % )                           ;
 ; Total registers                    ; 4019                                              ;
 ; Total pins                         ; 101 / 475 ( 21 % )                                ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/24/2015 23:18:20 ;
+; Start date & time ; 04/05/2015 17:50:50 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; niosII_microc_lab1  ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 116530612615.142726069903400          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 116530612615.142827785003180          ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; 2147039                               ; --            ; --          ; Top        ;
@@ -90,11 +90,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:25     ; 1.0                     ; 523 MB              ; 00:00:59                           ;
-; Fitter                    ; 00:00:40     ; 1.9                     ; 626 MB              ; 00:00:49                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 383 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 409 MB              ; 00:00:02                           ;
-; Total                     ; 00:02:12     ; --                      ; --                  ; 00:01:53                           ;
+; Analysis & Synthesis      ; 00:01:22     ; 1.0                     ; 730 MB              ; 00:00:56                           ;
+; Fitter                    ; 00:00:36     ; 2.2                     ; 1042 MB             ; 00:00:43                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 464 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 538 MB              ; 00:00:02                           ;
+; Total                     ; 00:02:03     ; --                      ; --                  ; 00:01:43                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

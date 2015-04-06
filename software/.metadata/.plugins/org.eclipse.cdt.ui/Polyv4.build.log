@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project Polyv4 ****
+
+make all 
+Info: Building ../Polyv4_bsp/
+make --no-print-directory -C ../Polyv4_bsp/
+[BSP build complete]
+[Polyv4 build complete]
+
+**** Build Finished ****
